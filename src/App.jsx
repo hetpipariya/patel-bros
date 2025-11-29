@@ -2013,11 +2013,19 @@ const AppContent = () => {
 
 
 export default function App() {
-  return (
-    <NavigationProvider>
-      <AppContent />
-      <Analytics />
-    </NavigationProvider>
-  );
-}
 
+  useEffect(() => {
+    if (sessionStorage.getItem("ip-logged")) return;
+
+    fetch("/api/log-ip")
+      .then(() => sessionStorage.setItem("ip-logged", "1"))
+      .catch(() => {});
+  }, []);
+
+  return (
+    <NavigationProvider>
+      <AppContent />
+      <Analytics />
+    </NavigationProvider>
+  );
+}
