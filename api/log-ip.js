@@ -9,22 +9,22 @@
   let geo = null;
 
   try {
-    const r = await fetch(`https://ipapi.co/${ip}/json/`);
+    const r = await fetch(`https://ipwho.is/${ip}`);
     if (r.ok) {
-      geo = await r.json();
+      const data = await r.json();
+      if (data.success) geo = data;
     }
   } catch (e) {
     console.error("Geo lookup failed:", e);
   }
 
-  // Log in Vercel logs
   console.log(
     "IP_LOG:",
     JSON.stringify({
       ip,
       city: geo?.city,
       region: geo?.region,
-      country: geo?.country_name,
+      country: geo?.country,
       lat: geo?.latitude,
       lon: geo?.longitude,
     })
