@@ -256,7 +256,7 @@ const LOCATION_IMAGES = {
   "Pondicherry": "https://imgs.search.brave.com/IC74v4nk63n_AVWqF4wkMurByQloy-Jv_lnOsyIYxfk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2Q3L1BvbmRpY2hl/cnJ5X0dhbmRoaVN0/YXR1ZS5qcGc",
   "Mahabalipuram": "https://t3.ftcdn.net/jpg/04/32/19/56/360_F_432195683_bkEVUQ6ibqH7ltzrtCxu1EL0NX0OlhoD.jpg",
   "Hampi": "https://wallpapercave.com/wp/wp7665085.jpg",
-  "Gokarna": "https://t3.ftcdn.net/jpg/11/60/48/82/360_F_116048824_a9QyCfXfloCdJ4IWuGLx8fdXNxKdgU3i.jpg",
+  "Gokarna": "https://www.maharashtragadkille.com/system/images/000/704/668/c27ba26d5997c95bda07b103f34d9f0a/original/BmAPFEzHIc1.jpg",
   "Mysore": "https://imgs.search.brave.com/2y0qIczklYmuGhlQ-3D8ryQFyjE5UObLQahRBB9tlIA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ieG15/c3VydS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDgv/TVlTVVJVLURBU0FS/QS0yMDI0LndlYnA",
   "Tirupati": "https://imgs.search.brave.com/OIFvASP-JICyZXnWh_N3QBAFhSFcr8hmBFtIZ3ESAJ4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvdGlydXBhdGkt/YmFsYWppLXU5MDhz/MnptOWR2ZG45ejIu/anBn",
   "Kanyakumari": "https://imgs.search.brave.com/O_PHuHHaaFqL4xv-3q7VFgJKvx4nC9qhoy-OunbKJiM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9i/L2I2L1JvY2tNZW1v/cmlhbC5qcGc",
