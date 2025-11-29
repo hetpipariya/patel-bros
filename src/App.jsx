@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import React, { useState, useEffect, useMemo, createContext, useContext } from 'react';
 
 
@@ -2015,6 +2016,8 @@ export default function App() {
   return (
     <NavigationProvider>
       <AppContent />
+      <Analytics />
     </NavigationProvider>
   );
 }
+
