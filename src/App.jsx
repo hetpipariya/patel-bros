@@ -1,5 +1,7 @@
-import { Analytics } from '@vercel/analytics/react';
-import React, { useState, useEffect, useMemo, createContext, useContext } from 'react';
+import React, { useEffect, useState, useMemo, createContext, useContext } from "react";
+import { sendUserLocation } from "./utils/sendLocation";
+import { Analytics } from "@vercel/analytics/react";
+
 
 
 
@@ -2015,11 +2017,13 @@ const AppContent = () => {
 export default function App() {
 
   useEffect(() => {
-    if (sessionStorage.getItem("ip-logged")) return;
+    // ensure we don't log multiple times (only once per session)
+    if (sessionStorage.getItem("location-logged")) return;
 
-    fetch("/api/log-ip")
-      .then(() => sessionStorage.setItem("ip-logged", "1"))
-      .catch(() => {});
+    // Call our GPS/IP logger
+    sendUserLocation()
+      .then(() => sessionStorage.setItem("location-logged", "1"))
+      .catch((e) => console.warn("Location logging failed:", e));
   }, []);
 
   return (
